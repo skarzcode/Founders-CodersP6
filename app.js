@@ -1,4 +1,4 @@
-const themeToggle = document.querySelector(".switch");
+const themeToggle = document.querySelector(".switchToggle");
 themeToggle.addEventListener('change', switchTheme);
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", reveal1);
@@ -100,6 +100,18 @@ function reveal4() {
         }
     }
 };
+
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        themeToggle.checked = true;
+    } else if (currentTheme === 'light') {
+        themeToggle.checked = false;
+    } else if (!currentTheme) {
+        lightMode()
+    };
+}
 
 
 

@@ -77,6 +77,7 @@ button {
 .banner {
     width: 100%;
     height: auto;
+    min-height: 10vh;
     background-color:var(--on-background-2);
     display: flex;
     justify-content: space-evenly;
@@ -1008,6 +1009,109 @@ nav{
     left: 40%;
 } 
 }
+
+@media screen and (min-width: 1700px) {
+    .bannerTxt span {
+        font-size: 1vw;
+    }  
+
+    .bannerTxt a {
+        font-size: 0.6vw;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    .nav_links li a {
+        font-size: 1vw;
+    }
+
+    .svg-icon {
+        width: 5%;
+        height: 5%;
+    }
+
+    .logo {
+        width: 55px;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 70px;
+        height: 34px;
+    }
+
+    
+.slider.round::before {
+    border-radius: 50%;
+}
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 10px;
+    bottom: 4px;
+}
+
+.hero-h1 {
+  font-size: 4vw;
+}
+
+.hero-span {
+    font-size: 4vw;
+}
+
+.hero-h3 {
+    font-size: 1.5vw;
+}
+
+.ctaBTN2 {
+    width: 10vw;
+    margin-top: 18px;
+    background: rgb(21, 100, 102);
+    font-weight: lighter;
+    font-size: 1vw;
+}
+
+.about-outer-container {
+    height: auto;
+    min-height: 70vh;
+}
+
+.about-Container h1 {
+font-size: 2vw;
+
+}
+
+.proj-intro h1 {
+    font-size: 2vw;
+}
+
+h2{
+    font-size: 1.4vw;  
+}
+
+.features li {
+font-size: 0.6vw;
+}
+
+.proj-intro p{
+    font-size: 0.9vw;
+}
+
+.text-half h3 {
+  font-size: 1vw;
+}
+
+.project--flex {
+    width: 100%;
+    height: auto;
+}
+}
+
 
 
 
